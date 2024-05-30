@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('../img/space.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#game-area {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#spaceship {
+  width: 50px;
+  height: 50px;
+  background-color: #00f;
+  position: absolute;
+  bottom: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#landing-zone {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: #8d8d8d;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+#start-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+
+
+/* sliderMass */
+.slidecontainer {
+  width: 8%;  /* Width of the outside container */
+  top: 8%;
+  right: 2%;
+  position: absolute;
+  text-align: center;
+  color:aliceblue;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 15px; /* Specified height */
+  border-radius: 15px;
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  border-radius: 50%;
+  background: #0000ff; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  border-radius: 50%;
+  background: #2600ff; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.timercontainer {
+  bottom: 5%;
+  right: 1%;
+  position: absolute;
+  text-align: center;
+  color:aliceblue;
+}
+
+#timerRealTime {
+  font-size: 30px;
+}
+
+#timerSimTime {
+  font-size: 30px;
+}

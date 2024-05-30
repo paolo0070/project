@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allunaggio</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <script src="./script/script.js"></script>
+  </head>
+  <body>
+    <div id="game-area">
+      <div id="spaceship"></div>
+      <div id="landing-zone"></div>
+  
+      <div class="slidecontainer">
+        <h3>Massa</h3>
+        <input type="range" min="1" max="100" value="50" class="slider" id="Mass">
+        <p>Value: <span id="MassOut"></span></p>
+
+        <h3>Velocità</h3>
+        <input type="range" min="1" max="5" value="3" class="slider" id="Velocity">
+        <p>Value: <span id="VelocityOut"></span></p>
+      </div>
+
+      <div class="timercontainer">
+        <h3>Tempo Simulazione</h3>
+        <div id="timerRealTime">00m 00s 00ms</div>
+
+        <h3>Tempo Reale</h3>
+        <div id="timerSimTime">0d 00h 00m 00s</div>
+      </div>
+    </div>
+    <button id="start-button" onclick="startGame()">Start</button>
+  </body>
+</html>
